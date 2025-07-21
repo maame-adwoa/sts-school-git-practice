@@ -4,49 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STS School - Git Practice</title>
+    <link rel="stylesheet" href="./index.html">
 </head>
-
+<style>
+   body {
+            background-color: white; 
+            display: flex;
+            justify-content: center;
+            min-height: 100px; 
+            margin: 0;
+            padding: 20px; 
+            box-sizing: border-box;}
+   
+   h1 {
+            color: black;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    h2 {
+            color: grey; 
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 10pxs;
+        }
+ label {
+            display: block;
+            color: black;
+            font-weight: 600; 
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+         /* Input, Textarea, and Select Styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 15px; 
+            border: 1px solid;
+            border-radius: 8px;
+            font-size: 15px;
+            color: gray;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            box-sizing: border-box;
+            }
+       }
+        /* Placeholder Text Styling */
+        input::placeholder,
+        textarea::placeholder {
+            color: grey; 
+            transition: border-color 0.2, box-shadow 0.2;
+        }
+         /* Button Styling */
+        button {
+            width: 100%; 
+            padding: 15px 20px;
+            background-color:green; 
+            color: whitesmoke;
+            font-size: 30px; 
+            font-weight: 600; 
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 25px;
+            }
+</style>
 <body>
+    <div> <Container>
     <h1>
-      <P>REGISTER FOR STS</P>  
+      <P>Register for STS</P>  
     </h1>
     <h2>
         <P>Please fill in this form to create an account</P>
     </h2>
     <FORM>
-    <P><label>FULL NAME</label>
-       <div><INPUT placeholder="Enter Your Name"></P></div>
+    <P><label>Full Name</label>
+       <div><INPUT type="text" placeholder="Enter Your Name"></P></div>
     <P>
-    <label>EMAIL</label>
-       <div><INPUT placeholder="Enter Email"></div>
+    <label>Email</label>
+       <div><INPUT type="email" placeholder="Enter Email"></div>
      </P>
      <P>
-    <label>PASSWORD</label>
-      <div><INPUT placeholder="Enter Password"></div>
+    <label>Password</label>
+      <div><INPUT type="password" placeholder="Enter Password"></div>
     </P>
     <P>
-    <label>DATE OF BIRTH</label>
-       <div><INPUT placeholder="M/DD/YY"></div>
+    <label>Date of Birth</label>
+       <div><INPUT type="date" placeholder="m/dd/yy"></div>
     </P>
-    <P> <LABEL>CHOOSE YOUR COURSE</LABEL>
-        <div><INPUT type="radio">FRONTEND
-        <INPUT type="radio">BACKEND
-        <INPUT type="radio">DATA SCIENCE</div>
+    <P> <LABEL>Choose your course</LABEL>
+        <div><INPUT type="radio">Frontend
+        <INPUT type="radio">Backend
+        <INPUT type="radio">Data Science</div>
     </P>
      <P> 
-     <LABEL>YOUR EXPERIENCE LEVEL</LABEL>
+     <LABEL>Your Experience Level</LABEL>
        <DIV> <select>
-            <option>BGINNER(0-1 YEARS)</option>
+            <option>Beginner(0-1 year)</option>
         </select></DIV>
     </P>
     <P>
-    <label>ANY COMMENTS?</label>
-      <div><textarea witdh="70" length="50"></textarea></div>
+    <label>Any Comments?</label>
+      <div><textarea id="comments" rows="4" placeholder="Tell us more..."></textarea></div>
     </P>
-    <label><INPUT type="checkbox"> WANT TO RECEIVE THE NEWS LETTER</label>
+    <label><input type="checkbox" checked> I want to receive news letters</label>
+    
     <p>
-         <button>Register</button>
+         <button type="submit">Register</button>
         </p>
+        </Container>
     </form>
     
 </head>
